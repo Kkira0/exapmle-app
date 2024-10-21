@@ -8,7 +8,7 @@
 <body>
     <h1>All posts</h1>
     <ul>
-        @foreach($allPosts as $post)
+    @foreach($allPosts as $post)
         <li>
             Title: {{$post->title}} <br>
             Content: {{$post->content}} <br>
@@ -16,10 +16,7 @@
         </li>
         @endforeach
     </ul>
+    
 
-    <h1>Single post view</h1>
-    <p>Title: {{$post->title}}</p>
-    <p>Content: {{$post -> content}}</p>
-   
 </body>
 </html>
